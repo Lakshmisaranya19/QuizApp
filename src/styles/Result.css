@@ -1,0 +1,123 @@
+/* src/styles/Result.css */
+:root {
+  --bg-light: #ffffff;
+  --text-light: #333;
+  --card-light: #f9f9f9;
+  
+  --bg-dark: #1e1e1e;
+  --text-dark: #ffffff;
+  --card-dark: #2d2d2d;
+  
+  --correct: #28a745;
+  --incorrect: #dc3545;
+  --not-attempted: #ffc107;
+  --primary: #007bff;
+}
+
+/* Default Light Theme */
+.result-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: var(--bg-light);
+  color: var(--text-light);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+.dark .result-container {
+  background: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+/* Summary Section */
+.summary {
+  background: var(--card-light);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: background 0.3s;
+}
+
+/* Dark Mode - Summary */
+.dark .summary {
+  background: var(--card-dark);
+}
+
+/* Review List */
+.review-list {
+  list-style: none;
+  padding: 0;
+}
+
+.review-item {
+  background: var(--card-light);
+  border-left: 5px solid var(--primary);
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  text-align: left;
+  transition: background 0.3s;
+}
+
+/* Dark Mode - Review Items */
+.dark .review-item {
+  background: var(--card-dark);
+}
+
+/* Question Styling */
+.review-item h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.review-item p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+/* Status Colors */
+.correct {
+  color: var(--correct);
+  font-weight: bold;
+}
+
+.incorrect {
+  color: var(--incorrect);
+  font-weight: bold;
+}
+
+.not-attempted {
+  color: var(--not-attempted);
+  font-weight: bold;
+}
+
+/* Buttons */
+button {
+  background: var(--primary);
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Dark Mode - Button */
+.dark button {
+  background: #0056b3;
+}
+
+.dark button:hover {
+  background: #003d80;
+}
+
+
